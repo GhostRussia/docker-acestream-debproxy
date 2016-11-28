@@ -33,7 +33,7 @@ RUN apt-get update -y && \
     rm -rf /tmp/* && \
 
 # obtain and unpack aceproxy
-    wget -o - https://github.com/ValdikSS/aceproxy/archive/a937b0c1.zip -O aceproxy.zip && \
+    wget -o - https://github.com/AndreyPavlenko/aceproxy/archive/26e79d1.zip -O aceproxy.zip && \
     unzip -d /home/aceproxy aceproxy.zip && \
     mv /home/aceproxy/aceproxy-* /home/aceproxy/aceproxy && \
     rm -rf /tmp/*
