@@ -38,6 +38,8 @@ RUN apt-get update -y && \
     mv /home/aceproxy/aceproxy-* /home/aceproxy/aceproxy && \
     rm -rf /tmp/*
 
+COPY ./aceproxy/torrenttelik_plugin.py /home/aceproxy/aceproxy/plugins
+
 # add services
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD start.sh /usr/bin/start.sh
