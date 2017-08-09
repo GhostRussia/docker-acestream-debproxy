@@ -86,7 +86,7 @@ class Torrenttelik(AceProxyPlugin):
         playlistgen = PlaylistGenerator()
 
         for channel in channels:
-            isSexChanel = channel.get('cat', '').lower().startswith(u"для взрослых")
+            isSexChanel = channel.get('cat', '').lower().startswith(u"эрот")
             if pathUrl == 'torrent-telik' and isSexChanel:
                 continue
             elif pathUrl == 'torrent-telik-sex' and not isSexChanel:
