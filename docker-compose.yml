@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+    acetv:
+        build: .
+        ports:
+            - 6878:6878
+            - 8621:8621
+        mem_limit: 1024m
+        restart: always
+        tmpfs:
+            - /tmp
+        command: /usr/bin/start.sh
